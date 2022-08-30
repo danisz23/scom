@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
+    /**PLATILLOS(platillo_id,tiempo_elabor acion,producto_id)   
      * Run the migrations.
      *
      * @return void
@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('platillos', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->timestamps('tiempo_elaboracion');
+            $table->id();
         });
     }
 

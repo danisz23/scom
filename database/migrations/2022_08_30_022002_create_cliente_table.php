@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
+    /**CLIENTE(cliente_id,nombre,apellido_pat, apellido_mat, email, contraseña, telefono, activo)
      * Run the migrations.
      *
      * @return void
