@@ -73,11 +73,11 @@
                                 <div class="cart-address">
                                     <div class="price-flex">
                                         <div>
-                                            <small><b>Address</b></small>
+                                            <small><b>Direccion</b></small>
                                             <p>{{address}}</p>
                                         </div>
                                         <button class="btn btn-main-gradient" @click="showAddressModal = true">
-                                            <!--<span class="ti-location-pin"></span>--> Change
+                                            <!--<span class="ti-location-pin"></span>--> Cambiar
                                         </button>
                                     </div>
                                 </div>
@@ -107,15 +107,15 @@
                                         class="btn btn-success"
                                         v-if="user !== null && address"
                                     >
-                                        <span class="ti-credit-card"></span> Pay Now
+                                        <span class="ti-credit-card"></span> Pagar ahora
                                     </paystack>
 
                                     <button v-else-if="!address" class="btn btn-success" @click="showAddressModal = true">
-                                        Add delivery address
+                                        Añadir direccion para el envio
                                     </button>
 
                                     <button v-else class="btn btn-success" @click="$router.push('/account')">
-                                        Login to continue
+                                        Registrate para continuar
                                     </button>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
 
             <div slot="body">
                 <div class="form-group">
-                    <label for="">Your address</label>
+                    <label for="">Tu direccion</label>
                     <input type="text" class="form-control" v-model="address" placeholder="No 230, Abba road" />
                 </div>
             </div>
